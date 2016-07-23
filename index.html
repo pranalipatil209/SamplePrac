@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> My App</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css" />
+    <link rel="stylesheet" type="text/css" href="/fa/css/font-awesome.css" />
+</head>
+<body ng-app="myApp">
+
+<header class="main-header">
+
+    <h1>Custom Directives [Server side form validation]</h1>
+
+</header>
+<ui-view></ui-view>
+
+
+
+<script type="text/javascript" src="./bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="./bower_components/angular-messages/angular-messages.min.js"></script>
+<script type="text/javascript" src="./bower_components/angular-route/angular-route.min.js"></script>
+<script type="text/javascript" src="./bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<!--Load main app.js file-->
+<script type="text/javascript" src="./app.js"></script>
+
+<!--controllers-->
+<script src="controller/formController.js"></script>
+<script src="controller/STableCtrl.js"></script>
+
+<!--Directives-->
+<script src="Directive/usernamevalidator.js"></script>
+<script src="Directive/tableGenerator.js"></script>
+
+<!--Services-->
+<script src="Services/userAvailableCheck.js"></script>
+</body>
+</html>

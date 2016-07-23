@@ -1,0 +1,18 @@
+{
+  "header" : {
+    "date" : "DATE",
+    "in" : "IN",
+    "out" : "OUT",
+    "edit" : ""
+  },
+  "data": [
+    {
+      "userId" : "+91234567890",
+      "date" : "2015-04-23",
+      "inTime" : "12:30 PM",
+      "outTime" : "0",
+      "totalTime" : "0",
+      "intent" : "attendance"
+    }
+  ]
+}

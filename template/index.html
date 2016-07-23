@@ -1,0 +1,20 @@
+<form name="signUpForm">
+<label>
+    Username:
+    <input type="text" ng-model="username" name="username" minlength="4"
+           ng-model-options="{ debounce: 100}"
+           required
+           unique-username url="http://localhost:3003/customers/exist?name=" />
+</label>
+
+<ng-messages for="signUpForm.username.$error" ng-if="signUpForm.username.$dirty">
+    <ng-message when="unique" class="help-block">User Name Exist</ng-message>
+    <ng-message when="required" class="error">Please Type Your Name</ng-message>
+    <ng-message when="minlength" class="error">Invalid Name</ng-message>
+</ng-messages>
+</form>
+
+<button ng-click="table()">Table</button>
+
+
+

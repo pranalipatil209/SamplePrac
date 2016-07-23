@@ -1,0 +1,14 @@
+<table>
+    <thead>
+        <tr ng-repeat="a in dum.header">
+            <th ng-repeat="b in a">{{b}}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="val in dum.data">
+            <td ng-repeat="i in val">
+                <input value="{{i}}">
+            </td>
+        </tr>
+    </tbody>
+</table>
